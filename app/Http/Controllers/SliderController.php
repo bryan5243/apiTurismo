@@ -78,6 +78,11 @@ class SliderController extends Controller
         $slider->imagen = $imagenBlob;
         $slider->save();
 
+
+
+
+        
+
         return redirect()->back()->with('success', 'Imagen guardada correctamente.');
     }
     private function redimensionarImagen($imagen, $width, $height)
